@@ -1,0 +1,35 @@
+﻿@model Invillia.Web.Models.LoginViewModel
+@{ Layout = null; }
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Administrativo - Autenticação</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/login.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="card card-container">
+                <h2 class="form-signin-heading">Login - Controle empréstimo de jogos</h2>
+                @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { @class = "form-signin" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.TextBoxFor(x => x.Login, new { @class = "form-control", id = "inputEmail", placeholder = "Usuário", autofocus = true })
+
+                    @Html.PasswordFor(x => x.Password, new { @class = "form-control", id = "inputPassword", placeholder = "Senha" })
+
+                    <button class="btn btn-lg  btn-primary btn-block" type="submit" style="float:right"><span class="glyphicon glyphicon-log-in"></span>&nbsp; Acessar</button>
+                    //@Html.Hidden("ReturnUrl", Request.QueryString["ReturnUrl"])
+
+                    @Html.ValidationMessageFor(x => x.Login)
+                    @Html.ValidationMessageFor(x => x.Password)
+                    @Html.ValidationSummary(true)
+                }<!-- /form -->
+                <p></p>
+            </div><!-- /card-container -->
+        </div><!-- /container -->
+    </body>
+</html>

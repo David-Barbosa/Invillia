@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Invillia.Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Gestão de Empréstimos</h2>
+            </div>
+            <div class="col-md-8">
+                @*@Html.Action("GetUserName", "Login")*@
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="list-group">
+                    <a href="@Url.Action("Index", "Home")" class="list-group-item">Início</a>
+                    <a href="@Url.Action("Index", "Friend")" class="list-group-item">Amigos</a>
+                    <a href="@Url.Action("Index", "Game")" class="list-group-item">Jogos</a>
+                    <a href="@Url.Action("Index", "Loan")" class="list-group-item">Empréstimos</a>
+                </div>
+            </div>
+            <div class="col-md-10">
+                @*@Html.Partial("_Message")*@
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

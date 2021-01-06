@@ -1,0 +1,183 @@
+﻿/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*General class*/
+div#spinner {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: -100px;
+    z-index: 2;
+    overflow: auto;
+}
+
+/* Bootstrap*/
+.navbar-default {
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+}
+
+    .navbar-default .navbar-nav > li > a {
+        color: #31708F;
+    }
+
+    .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+        color: #000000;
+        background-color: #FFFFFF;
+    }
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #31708F;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #D9EDF7;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding-left: 0px;
+}
+
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover {
+    background: #c0efe3 !important;
+    color: #31708f !important;
+}
+
+.datepicker th {
+    background: #d9edf9 !important;
+    border-color: #bce8f1 !important;
+    border-radius: 0px !important;
+    color: #31708f !important;
+}
+
+.datepicker td {
+}
+
+
+/* css */
+th {
+    text-align: left;
+    background-color: #31708F;
+    color: white;
+}
+
+.alinhamento {
+    text-align: right;
+}
+
+.espaco {
+    padding-bottom: 13px;
+}
+
+.col-not-margin {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.obrigatorio {
+    color: red;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.tudo {
+    min-height: 100%;
+    position: relative;
+}
+
+.topo {
+    background: none;
+}
+
+.conteudo {
+    padding: 10px;
+    padding-bottom: 60px; /* Mesma Altura do Rodapé */
+}
+
+.rodape {
+    margin-bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: white;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4;
+}
+
+    /* Cor do indicador de rolagem - ao passar o mouse */
+    ::-webkit-scrollbar-thumb:vertical:hover,
+    ::-webkit-scrollbar-thumb:horizontal:hover {
+        background-color: #717171;
+    }
+
+textarea {
+    height: 120px !important;
+    resize: none;
+}
+
+.fundo {
+    background-color: #31708F;
+}
+
+tr td {
+    padding-top: 15px;
+}
+
+.imagem-adm {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    text-align: center;
+}
